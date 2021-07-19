@@ -14,6 +14,10 @@
 
     @yield('content')
 
+    <section>
+        @include('partials.carrousel')
+    </section>
+
     <footer>
         <div class="w-100 text-center bg-success fixed-bottom">
             Charles de Lalaing
