@@ -36,10 +36,10 @@
                 aria-label="Slide 4"></button>
         </div>
         <div class="carousel-item active">
-            <img src="{{ asset('img/color1.jpg') }}" class="d-block w-100" alt="...">
+            <img src="{{ asset('img/color1.jpg') }}" class="d-block w-50 m-auto" alt="...">
         </div>
         <div class="carousel-item">
-            <img src="{{ asset('img/color2.jpg') }}" class="d-block w-100" alt="...">
+            <img src="{{ asset('img/color2.jpg') }}" class="d-block w-50 m-auto" alt="...">
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev">
@@ -52,7 +52,7 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-@else
+@elseif (Request::url() === 'http://127.0.0.1:8000')
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 
         <div class="carousel-indicators">
@@ -62,10 +62,10 @@
                 aria-label="Slide 6"></button>
         </div>
         <div class="carousel-item active">
-            <img src="{{ asset('img/food1.jpg') }}" class="d-block w-100" alt="...">
+            <img src="{{ asset('img/food1.jpg') }}" class="d-block w-50 m-auto" alt="...">
         </div>
         <div class="carousel-item">
-            <img src="{{ asset('img/food2.jpg') }}" class="d-block w-100" alt="...">
+            <img src="{{ asset('img/food2.jpg') }}" class="d-block w-50 m-auto" alt="...">
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev">

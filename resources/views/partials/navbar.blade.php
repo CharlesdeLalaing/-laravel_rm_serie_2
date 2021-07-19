@@ -9,6 +9,7 @@
             <a class="nav-item nav-link" href="/">Home</a>
             <a class="nav-item nav-link" href="{{route('blog')}}">Blog</a>
             <a class="nav-item nav-link" href="{{route('contact')}}">Contact</a>
+            <a class="nav-item nav-link" href="{{route('extra')}}">Extra</a>
         </div>
     </div>
 </nav>

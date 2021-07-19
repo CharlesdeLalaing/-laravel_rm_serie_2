@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\ExtraController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,17 +17,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    $nom = 'Charles';
-    return view('home', compact('nom'));
-});
-
-Route::get('/blog', function () {
-    $age = 22;
-    return view('pages.blog', compact('age'));
-})->name('blog');
-
-Route::get('/contact', function () {
-    $sexe = 'homme';
-    return view('pages.contact', compact('sexe'));
-})->name('contact');
+Route::get('/', [HomeController::class,'index']);
+Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+Route::get('/blog', [BlogController::class,'index'])->name('blog');
+Route::get('/extra', [ExtraController::class,'index'])->name('extra');

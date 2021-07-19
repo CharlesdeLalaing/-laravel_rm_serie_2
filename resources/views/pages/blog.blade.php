@@ -1,5 +1,5 @@
 @extends('layout.base')
 
 @section('content')
-    <h1>{{ $age }}</h1>
+    <h1>22 ans</h1>
 @endsection
